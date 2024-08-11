@@ -1,0 +1,37 @@
+.banner {
+  background: top / cover url('src/assets/images/backgrounds/banner.jpg') no-repeat;
+  .swiper-slide {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 20px;
+  }
+  .swiper-pagination-bullet {
+    background-color: $colorGreen2;
+    width: 60px;
+    border-radius: 5px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 10px;
+  }
+  &__content {
+    padding: 20px;
+    border-radius: 9px;
+    max-width: 750px;
+    background-color: rgba($color: #fff, $alpha: 0.8);
+  }
+  &__title {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+}

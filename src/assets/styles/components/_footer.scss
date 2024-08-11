@@ -1,0 +1,73 @@
+.footer {
+  &__main > .container {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+  &__company-info {
+    max-width: 300px;
+  }
+  .text {
+    margin-bottom: 40px;
+  }
+  .logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .socials {
+    display: flex;
+    gap: 10px;
+  }
+  .social__icon {
+    width: 35px;
+    height: 35px;
+    background-color: $colorLight;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__nav-title {
+    color: $colorGreen2;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__contacts {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-item {
+    display: flex;
+    gap: 10px;
+    &__icon {
+      width: 20px;
+      height: 20px;
+    }
+    &__text {
+      font-size: 18px;
+    }
+  }
+  &__underline > .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid $colorDark;
+    text-align: center;
+  }
+}

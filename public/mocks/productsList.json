@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "title": "Pistachios",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam ducimus animi fugiat alias labore.",
+    "image": "/src/assets/images/products/pistachios.png",
+    "gallery": [
+      "/src/assets/images/products/pistachios.png",
+      "/src/assets/images/products/pistachios.png",
+      "/src/assets/images/products/pistachios.png"
+    ],
+    "price": 13.5,
+    "old_price": null,
+    "is_new": true,
+    "discount": false,
+    "stock": 3
+  },
+  {
+    "id": 2,
+    "title": "Tomato",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam ducimus animi fugiat alias labore.",
+    "image": "/src/assets/images/products/tomato.png",
+    "gallery": [
+      "/src/assets/images/products/tomato.png",
+      "/src/assets/images/products/tomato.png",
+      "/src/assets/images/products/tomato.png",
+      "/src/assets/images/products/tomato.png",
+      "/src/assets/images/products/tomato.png",
+      "/src/assets/images/products/tomato.png"
+    ],
+    "price": 13.5,
+    "old_price": 15,
+    "is_new": true,
+    "discount": true,
+    "stock": 3
+  },
+  {
+    "id": 3,
+    "title": "Broccoli",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam ducimus animi fugiat alias labore.",
+    "image": "/src/assets/images/products/broccoli.png",
+    "gallery": [
+      "/src/assets/images/products/broccoli.png",
+      "/src/assets/images/products/broccoli.png",
+      "/src/assets/images/products/broccoli.png"
+    ],
+    "price": 13.5,
+    "old_price": null,
+    "is_new": false,
+    "discount": false,
+    "stock": 5
+  },
+  {
+    "id": 4,
+    "title": "Almond",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam ducimus animi fugiat alias labore.",
+    "image": "/src/assets/images/products/almond.png",
+    "gallery": [
+      "/src/assets/images/products/almond.png",
+      "/src/assets/images/products/almond.png",
+      "/src/assets/images/products/almond.png"
+    ],
+    "price": 13.5,
+    "old_price": 20,
+    "is_new": true,
+    "discount": true,
+    "stock": 3
+  },
+  {
+    "id": 5,
+    "title": "Corn",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam ducimus animi fugiat alias labore.",
+    "image": "/src/assets/images/products/corn.png",
+    "gallery": [
+      "/src/assets/images/products/corn.png",
+      "/src/assets/images/products/corn.png",
+      "/src/assets/images/products/corn.png"
+    ],
+    "price": 13.5,
+    "old_price": 20,
+    "is_new": false,
+    "discount": true,
+    "stock": 5
+  },
+  {
+    "id": 6,
+    "title": "Hazelnuts",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam ducimus animi fugiat alias labore.",
+    "image": "/src/assets/images/products/hazelnuts.png",
+    "gallery": [
+      "/src/assets/images/products/hazelnuts.png",
+      "/src/assets/images/products/hazelnuts.png",
+      "/src/assets/images/products/hazelnuts.png"
+    ],
+    "price": 13.5,
+    "old_price": 20,
+    "is_new": true,
+    "discount": true,
+    "stock": 7
+  }
+]

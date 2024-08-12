@@ -119,7 +119,7 @@ export default {
     },
     goToCatalog() {
       this.$root.$refs.modal.closeModal()
-      location.href = '/catalog'
+      this.$router.push('/catalog')
     }
   }
 }

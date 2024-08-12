@@ -99,7 +99,7 @@ export default {
       //   this.loader = true
 
       axios
-        .get('/mocks/productsList.json')
+        .get('./mocks/productsList.json')
         .then(function (response) {
           self.productData = response.data[productId]
           //   self.loader = false

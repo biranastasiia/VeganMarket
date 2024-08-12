@@ -3,11 +3,11 @@
     "id": 1,
     "title": "Pistachios",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam ducimus animi fugiat alias labore.",
-    "image": "/images/products/pistachios.png",
+    "image": "./images/products/pistachios.png",
     "gallery": [
-      "/images/products/pistachios.png",
-      "/images/products/pistachios.png",
-      "/images/products/pistachios.png"
+      "./images/products/pistachios.png",
+      "./images/products/pistachios.png",
+      "./images/products/pistachios.png"
     ],
     "price": 13.5,
     "old_price": null,
@@ -19,14 +19,14 @@
     "id": 2,
     "title": "Tomato",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam ducimus animi fugiat alias labore.",
-    "image": "/images/products/tomato.png",
+    "image": "./images/products/tomato.png",
     "gallery": [
-      "/images/products/tomato.png",
-      "/images/products/tomato.png",
-      "/images/products/tomato.png",
-      "/images/products/tomato.png",
-      "/images/products/tomato.png",
-      "/images/products/tomato.png"
+      "./images/products/tomato.png",
+      "./images/products/tomato.png",
+      "./images/products/tomato.png",
+      "./images/products/tomato.png",
+      "./images/products/tomato.png",
+      "./images/products/tomato.png"
     ],
     "price": 13.5,
     "old_price": 15,
@@ -38,11 +38,11 @@
     "id": 3,
     "title": "Broccoli",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam ducimus animi fugiat alias labore.",
-    "image": "/images/products/broccoli.png",
+    "image": "./images/products/broccoli.png",
     "gallery": [
-      "/images/products/broccoli.png",
-      "/images/products/broccoli.png",
-      "/images/products/broccoli.png"
+      "./images/products/broccoli.png",
+      "./images/products/broccoli.png",
+      "./images/products/broccoli.png"
     ],
     "price": 13.5,
     "old_price": null,
@@ -54,11 +54,11 @@
     "id": 4,
     "title": "Almond",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam ducimus animi fugiat alias labore.",
-    "image": "/images/products/almond.png",
+    "image": "./images/products/almond.png",
     "gallery": [
-      "/images/products/almond.png",
-      "/images/products/almond.png",
-      "/images/products/almond.png"
+      "./images/products/almond.png",
+      "./images/products/almond.png",
+      "./images/products/almond.png"
     ],
     "price": 13.5,
     "old_price": 20,
@@ -70,11 +70,11 @@
     "id": 5,
     "title": "Corn",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam ducimus animi fugiat alias labore.",
-    "image": "/images/products/corn.png",
+    "image": "./images/products/corn.png",
     "gallery": [
-      "/images/products/corn.png",
-      "/images/products/corn.png",
-      "/images/products/corn.png"
+      "./images/products/corn.png",
+      "./images/products/corn.png",
+      "./images/products/corn.png"
     ],
     "price": 13.5,
     "old_price": 20,
@@ -86,11 +86,11 @@
     "id": 6,
     "title": "Hazelnuts",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam ducimus animi fugiat alias labore.",
-    "image": "/images/products/hazelnuts.png",
+    "image": "./images/products/hazelnuts.png",
     "gallery": [
-      "/images/products/hazelnuts.png",
-      "/images/products/hazelnuts.png",
-      "/images/products/hazelnuts.png"
+      "./images/products/hazelnuts.png",
+      "./images/products/hazelnuts.png",
+      "./images/products/hazelnuts.png"
     ],
     "price": 13.5,
     "old_price": 20,

@@ -53,7 +53,7 @@ export default {
   },
   mounted() {
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 798) {
+      if (window.innerWidth > 768) {
         this.direction = 'vertical'
       } else {
         this.direction = 'horizontal'

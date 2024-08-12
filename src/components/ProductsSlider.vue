@@ -1,6 +1,5 @@
 <template>
   <swiper
-    :loop="true"
     :autoplay="{ delay: 5000 }"
     :modules="modules"
     :navigation="nav"
@@ -46,11 +45,7 @@ export default {
   },
   data() {
     return {
-      productsList: [],
-      opt: {
-        prevEl: '.button-prev',
-        nextEl: '.button-next'
-      }
+      productsList: {}
     }
   },
   mounted() {

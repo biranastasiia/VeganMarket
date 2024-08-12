@@ -31,7 +31,7 @@
     </div>
     <div class="cart__footer">
       <div class="cart__title">Total sum:</div>
-      <div class="cart__sum">${{ totalSum }}</div>
+      <div class="cart__title">${{ totalSum }}</div>
     </div>
   </div>
 </template>

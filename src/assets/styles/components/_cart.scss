@@ -9,6 +9,9 @@
   z-index: 1;
   padding: 20px;
   border-radius: 9px;
+  @include mobile {
+    width: unset;
+  }
   &__wrap {
     position: relative;
   }
@@ -20,11 +23,14 @@
   &__title {
     font-size: 32px;
     font-weight: 700;
+    @include mobile {
+      font-size: 22px;
+    }
   }
   &__close {
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
     &::after,
     &::before {
@@ -54,10 +60,6 @@
     justify-content: space-between;
     align-items: center;
   }
-  &__sum {
-    font-size: 32px;
-    font-weight: 700;
-  }
 }
 
 .cart__item {
@@ -85,6 +87,7 @@
   &-row {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
   }
   &-key {
     font-weight: 700;

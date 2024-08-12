@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import { markRaw } from 'vue'
 import ModalLogin from './ModalLogin.vue'
 import ModalRegistration from './ModalRegistration.vue'
 import ModalPwdRecovery from './ModalPwdRecovery.vue'
@@ -21,9 +22,9 @@ export default {
     return {
       modal_name: null,
       modal_list: {
-        login: ModalLogin,
-        registration: ModalRegistration,
-        pwd_recovery: ModalPwdRecovery
+        login: markRaw(ModalLogin),
+        registration: markRaw(ModalRegistration),
+        pwd_recovery: markRaw(ModalPwdRecovery)
       }
     }
   },

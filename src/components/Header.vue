@@ -27,8 +27,14 @@
           </ul>
         </div>
       </nav>
-      <div class="header__icons">
-        <div class="header__icon" @click="openModal('login')">
+      <div class="header__user-actions">
+        <div class="header__user" v-if="user_name">
+          <div>Hi, {{ user_name }}!</div>
+          <div class="header__icon" @click="logOut()">
+            <img src="../assets/images/icons/logout.svg" alt="logout" />
+          </div>
+        </div>
+        <div v-if="!user_name" class="header__icon" @click="openModal('login')">
           <img src="../assets/images/icons/user.svg" alt="user" />
         </div>
         <div class="cart__wrap">
@@ -55,12 +61,15 @@ export default {
     return {
       isFixed: false,
       isCart: false,
-      isMenu: true
+      isMenu: null,
+      user_name: ''
     }
   },
   mounted() {
+    this.getUserName()
+    this.isMenu = window.innerWidth > 1024 ? true : false
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 768) {
+      if (window.innerWidth > 1024) {
         this.isMenu = true
       } else {
         this.isMenu = false
@@ -83,6 +92,15 @@ export default {
     },
     toggleMenu() {
       this.isMenu = !this.isMenu
+    },
+    getUserName() {
+      const user = JSON.parse(localStorage.getItem('user'))
+      const login = localStorage.getItem('login')
+      this.user_name = user && login ? user.name : ''
+    },
+    logOut() {
+      localStorage.setItem('login', false)
+      this.user_name = ''
     }
   }
 }

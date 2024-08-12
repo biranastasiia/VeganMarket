@@ -1,6 +1,10 @@
 .top-products {
   padding-top: 100px;
   padding-bottom: 100px;
+  @include mobile {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   &__slider-wrap {
     position: relative;
   }
@@ -11,6 +15,9 @@
   .swiper {
     max-width: 90%;
     padding: 10px;
+    @include mobile {
+      max-width: 80%;
+    }
   }
   .swiper-slide {
     box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.2);

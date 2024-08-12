@@ -5,7 +5,7 @@
     :modules="modules"
     class="gallery-swiper__main"
   >
-    <swiper-slide v-for="image in list" :key="image">
+    <swiper-slide v-for="(image, index) in list" :key="index">
       <div class="gallery__image-wrap">
         <div class="gallery__image-signs">
           <div class="gallery__image-sign discount" v-if="discount">sale</div>
@@ -22,10 +22,10 @@
     :freeMode="true"
     :watchSlidesProgress="true"
     :modules="modules"
-    :direction="'vertical'"
+    :direction="direction"
     class="gallery-swiper__thumb"
   >
-    <swiper-slide v-for="image in list" :key="image">
+    <swiper-slide v-for="(image, index) in list" :key="index">
       <img :src="image" :alt="title" />
     </swiper-slide>
   </swiper>
@@ -46,12 +46,25 @@ export default {
     Swiper,
     SwiperSlide
   },
+  data() {
+    return {
+      direction: 'vertical'
+    }
+  },
+  mounted() {
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 798) {
+        this.direction = 'vertical'
+      } else {
+        this.direction = 'horizontal'
+      }
+    })
+  },
   setup() {
     const thumbsSwiper = ref(null)
     const setThumbsSwiper = (swiper) => {
       thumbsSwiper.value = swiper
     }
-
     return {
       thumbsSwiper,
       setThumbsSwiper,

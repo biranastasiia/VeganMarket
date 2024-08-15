@@ -2,6 +2,7 @@
   <swiper
     :autoplay="{ delay: 5000 }"
     :modules="modules"
+    :loop="true"
     :navigation="nav"
     :slidesPerView="1"
     :spaceBetween="20"

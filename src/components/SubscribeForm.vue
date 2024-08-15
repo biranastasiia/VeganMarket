@@ -17,7 +17,7 @@
         </div>
         <button class="cta-button subscribe__button" @click="submitForm()">
           <img src="../assets/images/icons/paper_plane.svg" alt="paper_plane" />
-          <span>subscribe</span>
+          <span class="subscribe__button-text">subscribe</span>
         </button>
       </div>
       <div class="registration__success" v-if="success_msg">

@@ -17,7 +17,7 @@
   </swiper>
   <swiper
     @swiper="setThumbsSwiper"
-    :spaceBetween="10"
+    :spaceBetween="20"
     :slidesPerView="4"
     :freeMode="true"
     :watchSlidesProgress="true"

@@ -27,6 +27,11 @@
   .input-field.error {
     border: 2px solid red;
   }
+  .input-errors {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
   .input-error-msg {
     color: #fff;
   }
@@ -34,13 +39,21 @@
     position: absolute;
     top: 0;
     right: 0;
-    padding: 20px 40px;
+    height: 100%;
     font-size: 20px;
     cursor: pointer;
     &:hover {
       transform: unset;
     }
     img {
+      display: none;
+      @include mobile {
+        display: block;
+      }
+    }
+  }
+  &__button-text {
+    @include mobile {
       display: none;
     }
   }

@@ -14,13 +14,14 @@
     top: 10px;
     right: 10px;
     display: flex;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
   }
   &__sign {
     color: #fff;
-    font-size: 18px;
-    padding: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 8px;
   }
   .discount {
     background-color: $colorOrange;

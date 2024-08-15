@@ -3,8 +3,9 @@
     <swiper
       :slides-per-view="1"
       :space-between="0"
+      :autoplay="{ delay: 4000 }"
       :loop="true"
-      :speed="1500"
+      :speed="1000"
       :modules="modules"
       :pagination="{
         clickable: true
@@ -92,8 +93,6 @@ export default {
     scrollToBlock() {
       const block = document.querySelector('.top-products')
       block.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
-
-      //:autoplay="{ delay: 5000 }"
     }
   }
 }

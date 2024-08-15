@@ -73,28 +73,19 @@
         </div>
       </div>
     </section>
-    <section class="subscribe">
-      <div class="container">
-        <h2 class="section__title">Subscribe to our news and special offers</h2>
-        <form class="subscribe__form" action="post">
-          <input class="subscribe__input" type="email" placeholder="Email" />
-          <button class="subscribe__button" type="submit">
-            <img src="../assets/images/icons/paper_plane.svg" alt="paper_plane" />
-            <span>Send</span>
-          </button>
-        </form>
-      </div>
-    </section>
+    <SubscribeForm />
   </main>
 </template>
 
 <script>
 import Banner from '../components/Banner.vue'
 import ProductsSlider from '../components/ProductsSlider.vue'
+import SubscribeForm from '../components/SubscribeForm.vue'
 export default {
   components: {
     Banner,
-    ProductsSlider
+    ProductsSlider,
+    SubscribeForm
   }
 }
 </script>

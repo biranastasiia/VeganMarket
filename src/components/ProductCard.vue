@@ -10,7 +10,7 @@
     <div class="product-card__body">
       <div class="product-card__title">{{ product.title }}</div>
       <p class="product-card__description">{{ product.description }}</p>
-      <div class="product-card__price">
+      <div class="product-card__price lato-font">
         ${{ product.price }}
         <sup class="product-card__old-price" v-if="product.old_price">${{ product.old_price }}</sup>
       </div>

@@ -4,10 +4,10 @@
       <div class="cart__title">Cart</div>
       <div class="cart__close" @click="closeCart"></div>
     </div>
-    <div class="cart__list">
+    <div class="cart__list" v-if="!isCartEmpty">
       <div class="cart__item" v-for="item in cartList" :key="item">
         <div class="cart__item-image">
-          <img :src="item.image" :alt="item.title" />
+          <img :src="baseUrl + item.image" :alt="item.title" />
         </div>
         <div class="cart__item-content">
           <div class="cart__item-row">
@@ -29,10 +29,11 @@
         </div>
       </div>
     </div>
-    <div class="cart__footer">
+    <div class="cart__footer" v-if="!isCartEmpty">
       <div class="cart__title">Total sum:</div>
-      <div class="cart__title">${{ totalSum }}</div>
+      <div class="cart__title lato-font">${{ totalSum }}</div>
     </div>
+    <div class="cart__empty" v-if="isCartEmpty">Your cart is empty</div>
   </div>
 </template>
 
@@ -41,10 +42,15 @@ export default {
   data() {
     return {
       cartList: {},
-      totalSum: 0
+      isCartEmpty: true,
+      totalSum: 0,
+      baseUrl: ''
     }
   },
   mounted() {
+    const originPath = window.location.origin
+    const basePath = this.$router.options.history.base
+    this.baseUrl = originPath + basePath
     this.getCartList()
   },
   methods: {
@@ -52,10 +58,12 @@ export default {
       let cartStorage = localStorage.getItem('cart')
       if (cartStorage) {
         this.cartList = JSON.parse(cartStorage)
+        this.calculateSum()
+        this.isCartEmpty = false
       } else {
         this.cartList = {}
+        this.isCartEmpty = true
       }
-      this.calculateSum()
     },
     closeCart() {
       this.$parent.toggleCart()

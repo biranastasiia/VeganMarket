@@ -1,21 +1,22 @@
 .subscribe {
   padding-bottom: 100px;
   .container {
-    background: center / cover url('/images/backgrounds/subscribe.jpg') no-repeat;
+    background: center / cover url('/images/backgrounds/spices.jpg') no-repeat;
     border-radius: 9px;
-    padding: 80px 20px 100px;
+    padding: 90px 20px 60px;
   }
   .section__title {
     color: $colorLight;
-    margin-bottom: 60px;
+    max-width: 70%;
+    margin: 0 auto 40px;
   }
   &__form {
     position: relative;
-    width: 90%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
-  &__input {
+  .input-field {
     width: 100%;
     font-size: 20px;
     padding: 20px 90px 20px 20px;
@@ -23,20 +24,31 @@
     border: none;
     outline: none;
   }
+  .input-field.error {
+    border: 2px solid red;
+  }
+  .input-error-msg {
+    color: #fff;
+  }
   &__button {
     position: absolute;
     top: 0;
     right: 0;
-    border: 0;
-    outline: 0;
-    background-color: $colorGreen;
     padding: 20px 40px;
     font-size: 20px;
-    border-radius: 9px;
     cursor: pointer;
-    text-transform: uppercase;
+    &:hover {
+      transform: unset;
+    }
     img {
       display: none;
     }
+  }
+  .registration__success {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 9px;
   }
 }

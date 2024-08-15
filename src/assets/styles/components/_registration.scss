@@ -45,10 +45,10 @@
   }
   &__success .registration__link {
     font-size: 25px;
-    color: $colorGreen2;
+    color: $colorGreen;
   }
   &__success .registration__link::after {
-    background-color: $colorGreen2;
+    background-color: $colorGreen;
   }
   &__fail {
     display: flex;

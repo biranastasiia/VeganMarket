@@ -8,6 +8,7 @@
           v-model="name"
           :class="{ error: v$.name.$errors.length }"
           type="text"
+          placeholder="First name"
         />
         <div class="input-errors" v-for="error of v$.name.$errors" :key="error.$uid">
           <div class="input-error-msg">{{ error.$message }}</div>
@@ -19,6 +20,7 @@
           v-model="email"
           :class="{ error: v$.email.$errors.length }"
           type="email"
+          placeholder="Email"
         />
         <div class="input-errors" v-for="error of v$.email.$errors" :key="error.$uid">
           <div class="input-error-msg">{{ error.$message }}</div>
@@ -31,6 +33,7 @@
             :class="{ visible: !isShown }"
             src="../assets/images/icons/hidden.svg"
             alt="hidden"
+            placeholder="Password"
           />
         </div>
         <input
@@ -38,6 +41,7 @@
           v-model="password"
           :class="{ error: v$.password.$errors.length }"
           :type="isShown ? 'text' : 'password'"
+          placeholder="Confirm password"
         />
         <div class="input-errors" v-for="error of v$.password.$errors" :key="error.$uid">
           <div class="input-error-msg">{{ error.$message }}</div>

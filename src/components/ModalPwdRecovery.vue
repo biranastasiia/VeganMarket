@@ -8,6 +8,7 @@
           v-model="email"
           :class="{ error: v$.email.$errors.length }"
           type="email"
+          placeholder="Email"
         />
         <div class="input-errors" v-for="error of v$.email.$errors" :key="error.$uid">
           <div class="input-error-msg">{{ error.$message }}</div>

@@ -15,7 +15,7 @@
           </div>
           <div class="product__content">
             <p class="product__description">{{ productData.description }}</p>
-            <div class="product__price">
+            <div class="product__price lato-font">
               <div class="product__price-current">${{ productData.price }}</div>
               <div class="product__price-old" v-if="productData.old_price">
                 ${{ productData.old_price }}
@@ -23,7 +23,7 @@
             </div>
             <div class="product__count">
               <div class="product__count-title">Add to cart:</div>
-              <div class="product__count-buttons">
+              <div class="product__count-buttons lato-font">
                 <div
                   class="product__count-button product__count-remove"
                   :class="{ disabled: count === 0 }"

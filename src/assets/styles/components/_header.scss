@@ -59,25 +59,35 @@
     }
   }
   &__nav-wrap {
+    &.visible {
+      @include tablet {
+        transform: translateX(0);
+      }
+    }
     @include tablet {
       position: fixed;
       top: 0;
       right: 0;
-      background-color: $colorGreen2;
+      height: 100%;
+      width: 40%;
+      background-color: $colorGreen;
       color: #fff;
       padding: 20px;
       z-index: 101;
-      height: 100%;
-      width: 40%;
+      transition: 1.2s all;
+      transform: translateX(150%);
+    }
+    @include mobile {
+      width: 60%;
     }
   }
   &__nav-close {
     display: none;
     position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 30px;
-    height: 30px;
+    top: 15px;
+    right: 15px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
     @include tablet {
       display: block;
@@ -89,8 +99,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 30px;
-    height: 2px;
+    width: 90%;
+    height: 1px;
     background-color: #fff;
   }
   &__nav-close::after {
@@ -146,7 +156,7 @@
 .logo {
   font-size: 30px;
   font-weight: 700;
-  color: $colorGreen2;
+  color: $colorGreen;
   @include tablet {
     font-size: 25px;
   }

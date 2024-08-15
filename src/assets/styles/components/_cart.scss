@@ -10,7 +10,9 @@
   padding: 20px;
   border-radius: 9px;
   @include mobile {
-    width: unset;
+    min-width: 250px;
+    width: fit-content;
+    padding: 15px 20px 15px 15px;
   }
   &__wrap {
     position: relative;
@@ -38,7 +40,7 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 100%;
+      width: 90%;
       height: 1px;
       background-color: #000000;
     }
@@ -60,11 +62,17 @@
     justify-content: space-between;
     align-items: center;
   }
+  &__empty {
+    color: $colorGray;
+  }
 }
 
 .cart__item {
   display: flex;
   gap: 15px;
+  @include mobile {
+    gap: 10px;
+  }
   &:not(:last-child) {
     padding-bottom: 15px;
     border-bottom: 1px solid #000;
@@ -72,6 +80,7 @@
   &-image {
     width: 100px;
     height: 100px;
+    flex-shrink: 0;
     img {
       width: 100%;
       height: 100%;
@@ -91,5 +100,8 @@
   }
   &-key {
     font-weight: 700;
+  }
+  &-value {
+    font-family: 'Lato', sans-serif;
   }
 }

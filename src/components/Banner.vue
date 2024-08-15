@@ -4,7 +4,6 @@
       :slides-per-view="1"
       :space-between="0"
       :loop="true"
-      :autoplay="{ delay: 5000 }"
       :speed="1500"
       :modules="modules"
       :pagination="{
@@ -13,39 +12,59 @@
     >
       <swiper-slide>
         <div class="container">
-          <div class="banner__content">
-            <h1 class="banner__title">Fresh Food Market</h1>
-            <p class="banner__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, veritatis explicabo
-              necessitatibus mollitia nostrum eos nisi quo similique vero aut delectus labore
-              assumenda quis reprehenderit exercitationem maxime harum quae deleniti.
-            </p>
-            <div class="banner__button cta-button" @click="scrollToBlock()">Go Shopping!</div>
+          <div class="banner__slide-inner">
+            <div class="banner__content">
+              <div class="banner__subtitle">just from the garden</div>
+              <h1 class="banner__title">create a unique plate filled with fresh vegetables</h1>
+              <p class="banner__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, veritatis explicabo
+                necessitatibus mollitia nostrum eos nisi quo similique vero aut delectus labore
+                assumenda quis reprehenderit exercitationem maxime harum quae deleniti.
+              </p>
+              <div class="banner__button cta-button" @click="scrollToBlock()">Go Shopping</div>
+            </div>
+            <div class="banner__image">
+              <img src="../assets/images/backgrounds/salad.jpg" alt="plate" />
+            </div>
           </div>
         </div>
       </swiper-slide>
       <swiper-slide>
         <div class="container">
-          <div class="banner__content">
-            <h2 class="banner__title">Fresh Food Market</h2>
-            <p class="banner__text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis veritatis iste
-              optio explicabo dolorem quo quis neque ad eaque quasi?
-            </p>
-            <div class="banner__button cta-button" @click="scrollToBlock()">Go Shopping!</div>
+          <div class="banner__slide-inner">
+            <div class="banner__content">
+              <div class="banner__subtitle">just from the garden</div>
+              <h2 class="banner__title">add spices and nuts to your diet</h2>
+              <p class="banner__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptatum nobis
+                veniam, suscipit, excepturi, molestiae dolorem perferendis iusto perspiciatis dolor
+                quaerat similique debitis sunt eveniet modi incidunt. Soluta aliquid reprehenderit
+                quos magni, laudantium quam ratione quidem dolores tempora earum labore.
+              </p>
+              <div class="banner__button cta-button" @click="scrollToBlock()">Go Shopping</div>
+            </div>
+            <div class="banner__image">
+              <img src="../assets/images/backgrounds/spices.jpg" alt="spices" />
+            </div>
           </div>
         </div>
       </swiper-slide>
       <swiper-slide>
         <div class="container">
-          <div class="banner__content">
-            <h2 class="banner__title">Fresh Food Market</h2>
-            <p class="banner__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores sed! Expedita
-              nobis hic earum autem? Tenetur accusamus porro quis eveniet perferendis ullam
-              cupiditate nisi veniam! Similique voluptates ducimus quis!
-            </p>
-            <div class="banner__button cta-button" @click="scrollToBlock()">Go Shopping!</div>
+          <div class="banner__slide-inner">
+            <div class="banner__content">
+              <div class="banner__subtitle">just from the garden</div>
+              <h2 class="banner__title">Maintain your health by eating healthy food</h2>
+              <p class="banner__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores sed!
+                Expedita nobis hic earum autem? Tenetur accusamus porro quis eveniet perferendis
+                ullam cupiditate nisi veniam! Similique voluptates ducimus quis!
+              </p>
+              <div class="banner__button cta-button" @click="scrollToBlock()">Go Shopping</div>
+            </div>
+            <div class="banner__image">
+              <img src="../assets/images/backgrounds/cooking.jpg" alt="cooking" />
+            </div>
           </div>
         </div>
       </swiper-slide>
@@ -73,6 +92,8 @@ export default {
     scrollToBlock() {
       const block = document.querySelector('.top-products')
       block.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
+
+      //:autoplay="{ delay: 5000 }"
     }
   }
 }

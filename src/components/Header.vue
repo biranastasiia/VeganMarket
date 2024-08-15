@@ -6,7 +6,7 @@
         <div class="header__nav-burger" @click="toggleMenu()">
           <div></div>
         </div>
-        <div class="header__nav-wrap" v-if="isMenu">
+        <div class="header__nav-wrap" :class="{ visible: isMenu }">
           <div class="header__nav-close" @click="isMenu = false"></div>
           <ul class="header__nav-list">
             <li class="header__nav-item">

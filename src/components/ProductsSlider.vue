@@ -18,7 +18,7 @@
     }"
   >
     <swiper-slide v-for="product in productsList" :key="product.id">
-      <ProductCard :data="product" />
+      <ProductCard :product="product" />
     </swiper-slide>
   </swiper>
 </template>
@@ -45,10 +45,14 @@ export default {
   },
   data() {
     return {
-      productsList: {}
+      productsList: [],
+      baseUrl: ''
     }
   },
   mounted() {
+    const originPath = window.location.origin
+    const basePath = this.$router.options.history.base
+    this.baseUrl = originPath + basePath
     this.getProductsList()
   },
   methods: {
@@ -57,7 +61,7 @@ export default {
       //   this.loader = true
 
       axios
-        .get('./mocks/productsList.json')
+        .get(self.baseUrl + '/mocks/productsList.json')
         .then(function (response) {
           self.productsList = response.data
           //   self.loader = false

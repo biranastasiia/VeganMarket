@@ -11,7 +11,7 @@
           <div class="gallery__image-sign discount" v-if="discount">sale</div>
           <div class="gallery__image-sign new" v-if="is_new">new</div>
         </div>
-        <img :src="image" :alt="title" />
+        <img :src="base_url + image" :alt="title" />
       </div>
     </swiper-slide>
   </swiper>
@@ -26,7 +26,7 @@
     class="gallery-swiper__thumb"
   >
     <swiper-slide v-for="(image, index) in list" :key="index">
-      <img :src="image" :alt="title" />
+      <img :src="base_url + image" :alt="title" />
     </swiper-slide>
   </swiper>
 </template>
@@ -41,7 +41,7 @@ import 'swiper/css/thumbs'
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules'
 
 export default {
-  props: ['list', 'title', 'discount', 'is_new'],
+  props: ['list', 'title', 'discount', 'is_new', 'base_url'],
   components: {
     Swiper,
     SwiperSlide

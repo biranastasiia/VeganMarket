@@ -10,6 +10,7 @@
               :title="productData.title"
               :is_new="productData.is_new"
               :discount="productData.discount"
+              :base_url="baseUrl"
             />
           </div>
           <div class="product__content">
@@ -79,10 +80,15 @@ export default {
   data() {
     return {
       productData: {},
-      count: 0
+      count: 0,
+      baseUrl: ''
     }
   },
   mounted() {
+    const originPath = window.location.origin
+    const basePath = this.$router.options.history.base
+    this.baseUrl = originPath + basePath
+
     this.getProduct()
     ProductsSlider.methods.getProductsList()
     // this.$refs.productsSlider.getProductsList()
@@ -99,7 +105,7 @@ export default {
       //   this.loader = true
 
       axios
-        .get('./mocks/productsList.json')
+        .get(self.baseUrl + '/mocks/productsList.json')
         .then(function (response) {
           self.productData = response.data[productId]
           //   self.loader = false

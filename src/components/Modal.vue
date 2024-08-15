@@ -15,9 +15,6 @@ import ModalRegistration from './ModalRegistration.vue'
 import ModalPwdRecovery from './ModalPwdRecovery.vue'
 
 export default {
-  components: {
-    ModalLogin
-  },
   data() {
     return {
       modal_name: null,

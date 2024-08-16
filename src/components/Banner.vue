@@ -18,9 +18,8 @@
               <div class="banner__subtitle">just from the garden</div>
               <h1 class="banner__title">create a unique plate filled with fresh vegetables</h1>
               <p class="banner__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, veritatis explicabo
-                necessitatibus mollitia nostrum eos nisi quo similique vero aut delectus labore
-                assumenda quis reprehenderit exercitationem maxime harum quae deleniti.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vitae corrupti tenetur
+                sapiente rem repellendus deleniti sit blanditiis consectetur nulla.
               </p>
               <div class="banner__button cta-button" @click="scrollToBlock()">Go Shopping</div>
             </div>
@@ -39,8 +38,7 @@
               <p class="banner__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptatum nobis
                 veniam, suscipit, excepturi, molestiae dolorem perferendis iusto perspiciatis dolor
-                quaerat similique debitis sunt eveniet modi incidunt. Soluta aliquid reprehenderit
-                quos magni, laudantium quam ratione quidem dolores tempora earum labore.
+                quaerat similique debitis sunt eveniet modi incidunt.
               </p>
               <div class="banner__button cta-button" @click="scrollToBlock()">Go Shopping</div>
             </div>
@@ -59,7 +57,7 @@
               <p class="banner__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores sed!
                 Expedita nobis hic earum autem? Tenetur accusamus porro quis eveniet perferendis
-                ullam cupiditate nisi veniam! Similique voluptates ducimus quis!
+                ullam cupiditate nisi veniam!
               </p>
               <div class="banner__button cta-button" @click="scrollToBlock()">Go Shopping</div>
             </div>

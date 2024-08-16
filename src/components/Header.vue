@@ -19,7 +19,7 @@
               <RouterLink to="/catalog">Products Catalog</RouterLink>
             </li>
             <li class="header__nav-item">
-              <RouterLink to="/blog">News Blog</RouterLink>
+              <RouterLink to="/blog">Blog</RouterLink>
             </li>
             <li class="header__nav-item">
               <RouterLink to="/contacts">Contact us</RouterLink>

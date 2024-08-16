@@ -1,0 +1,84 @@
+.questions {
+  padding-bottom: 100px;
+  .section__title,
+  .section__text {
+    max-width: 579px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .loader {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+.accordion {
+  flex-basis: calc(50% - 10px);
+  background-color: $colorLight;
+  border-radius: 9px;
+  overflow: hidden;
+  height: fit-content;
+  transition: 0.3s all;
+  &:hover {
+    background-color: $colorYellow;
+  }
+  @include mobile {
+    flex-basis: 100%;
+  }
+  &.active {
+    .accordion__close::before {
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+    .accordion__close::after {
+      transform: translate(-50%, -50%) rotate(-90deg);
+    }
+    .accordion__body {
+      padding-bottom: 15px;
+    }
+  }
+  &__header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+  &__close {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 1px;
+      background-color: $colorDark;
+      transition: 0.3s all;
+    }
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+  &__body {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 0px;
+    transition: 0.3s all;
+  }
+}

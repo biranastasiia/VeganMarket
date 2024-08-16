@@ -1,8 +1,10 @@
 .benefits {
-  padding-top: 100px;
-  padding-bottom: 50px;
-  .section__title {
-    margin-bottom: 60px;
+  .section__title,
+  .section__text {
+    max-width: 579px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
   }
   &__list {
     display: flex;
@@ -16,6 +18,15 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    &:hover {
+      cursor: pointer;
+      .benefits__item-icon {
+        filter: drop-shadow(0 0 10px $colorYellow);
+      }
+      .benefits__item-body {
+        background-color: $colorYellow;
+      }
+    }
     @include tablet {
       flex-basis: 45%;
     }
@@ -28,21 +39,28 @@
   }
   &__item-body {
     flex-grow: 1;
-    background-color: $colorMint;
+    background-color: $colorLight;
     padding: 20px 15px;
     border-bottom-right-radius: 9px;
     border-bottom-left-radius: 9px;
+    transition: 0.3s all;
   }
   &__item-title {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 10px;
+    @include tablet {
+      font-size: 24px;
+    }
     @include mobile {
       font-size: 20px;
     }
   }
   &__item-text {
     font-size: 20px;
+    @include tablet {
+      font-size: 18px;
+    }
     @include mobile {
       font-size: 14px;
     }

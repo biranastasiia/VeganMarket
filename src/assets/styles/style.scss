@@ -11,6 +11,12 @@
 @import 'views/error-page';
 @import 'views/about-page';
 
+// blocks
+@import 'blocks/section';
+@import 'blocks/benefits';
+@import 'blocks/loader';
+@import 'blocks/questions';
+
 // components
 @import 'components/header';
 @import 'components/banner';
@@ -21,4 +27,3 @@
 @import 'components/registration';
 @import 'components/cart';
 @import 'components/subscribe-form';
-@import 'components/benefits';

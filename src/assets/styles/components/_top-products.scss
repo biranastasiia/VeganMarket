@@ -5,6 +5,13 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .section__title,
+  .section__text {
+    max-width: 579px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
   &__slider-wrap {
     position: relative;
     &::before,
